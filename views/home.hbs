@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/cloud.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container">
+    <div id="header">
+        <h1 class='homeHeading'>Weather App </h1>
+        {{>header}}
+
+        <div>
+            <form id='form'>
+
+                <label for="search">Enter Your city</label><br>
+                <input type="text" name="location" id='search' autofocus >
+                <input type="submit" id='submit'>
+            </form>
+            <div id="display-data">
+                <p id="weather-location"></p>
+                <p id="weather-description"></p>
+                <p id="weather-temperature"></p>
+                <p id="weather-feelslike"></p>
+                <p id="rain-chances"></p>
+                <p id="weather-windDir"></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        {{>footer}}
+
+    </div>
+    <script src="js/weatherReport.js"></script>
+</body>
+
+</html>
