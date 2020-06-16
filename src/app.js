@@ -10,8 +10,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, '../static')));
 app.set('view engine', 'hbs');
 app.set('views ', path.join(__dirname, '../views'));
-let path = path.join(__dirname, '../views/template')
-hbs.registerPartials(path);
+
+hbs.registerPartials(path.join(__dirname, '../views/template'));
 
 
 app.get('', (req, res) => {
